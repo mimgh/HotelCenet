@@ -16,6 +16,7 @@ function subirFoto(foto, nom) {
 				break;
 				case 2:
 				navigator.notification.beep(3);
+				break;
 				case 3:
 				navigator.notification.alert(infoDisp()['nombre'], null, "info", "Sí");
 			}
