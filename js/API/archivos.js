@@ -1,6 +1,6 @@
 // archivos
 
-function subirFoto(foto) {
+function subirFoto(foto, nom) {
 	var options = new FileUploadOptions();
 	options.fileKey="archivo";
 	options.fileName="Ivan.jpg";
@@ -16,9 +16,14 @@ function subirFoto(foto) {
 				break;
 				case 2:
 				navigator.notification.beep(3);
+				case 3:
+				navigator.notification.alert(infoDisp()['nombre'], null, "info", "Sí");
+				infoDisp()[;
+				break;
 			}
+			registro(nom);
 			window.location.href="#main";
-		}, "Registro", "Vibrar,Sonar,Cancelar");
+		}, "Registro", "Vibrar,Sonar,Info,Cancelar");
 	}, 
 	function(err){
 		navigator.notification.alert("Error al subir el archivo: "+errr.code, null, "Subir Registro", "Aceptar");

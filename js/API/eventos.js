@@ -23,5 +23,8 @@ $(document).ready(function(e) {
 });
 
 function isLogin() {
-	return false;
+	if(window.localStorage.getItem('id') != undefined)
+		return true;
+	else
+		return false;
 }
