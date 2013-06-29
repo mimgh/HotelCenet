@@ -9,5 +9,5 @@ function tomarFoto() {
 		$('#mFoto').html('<img src="'+foto+'" width="100%" />');
 	}, function(err){
 		navigator.notification.alert("Error: "+err.code, null, "Captura", "Aceptar");
-	}, {limit:2});
+	}, {limit:1});
 }
