@@ -18,8 +18,6 @@ function subirFoto(foto, nom) {
 				navigator.notification.beep(3);
 				case 3:
 				navigator.notification.alert(infoDisp()['nombre'], null, "info", "Sí");
-				infoDisp()[;
-				break;
 			}
 			registro(nom);
 			window.location.href="#main";
