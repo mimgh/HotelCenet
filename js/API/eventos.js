@@ -33,10 +33,9 @@ $(document).ready(function(e) {
 		});
 		$('#rh').tap(function() {
 			if(isConnected())
-				// Sincronizar al servidor
-				placeHolderPorMientras;
+				subirReserva(0, reserve.attr('th'), $('#rHabitaciones').val(), $('#rDias').val(), $('#rPersonas').val());
 			else
-				guardarReserva(nr1.attr('th'), $('#rHabitaciones').val(), $('#rDias').val(), $('#rPersonas').val());
+				guardarReserva(reserve.attr('th'), $('#rHabitaciones').val(), $('#rDias').val(), $('#rPersonas').val());
 		});
 	}, false);
 });
@@ -46,8 +45,4 @@ function isLogin() {
 		return true;
 	else
 		return false;
-}
-
-function isConnected() {
-	return false;
 }
